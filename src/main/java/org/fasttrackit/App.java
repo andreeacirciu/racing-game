@@ -19,6 +19,26 @@ public class App
         //carReference.damaged;
        // carReference.fuelLevel= 12.2;
 
+//        carReference.engine = new Engine; //= adaug un tip nou real de tip Engine
+//        carReference.engine.manufacturer = "VW";
+//        carReference.engine.capacity = 2000;
+
+        Engine engine1 = new Engine();//varianta mai ok
+        engine1.manufacturer="VW";
+        engine1.capacity= 2000;
+
+        carReference.engine = engine1;
+
+//one object with two references
+        System.out.println("Engine details: " );
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+
+        engine1.capacity= 2100;
+        System.out.println("Engine details: " );
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+
         System.out.println("Properties of " + carReference.name); //concatenare
         System.out.println("Color: " + carReference.color);
         System.out.println("Maximum Speed: " + carReference.maxSpeed);
@@ -38,6 +58,7 @@ public class App
         System.out.println("Properties of " + car2.name);
         System.out.println("Damaged: " + car2.damaged);
         System.out.println("Color: " + car2.color);
+
 
     }
 }

@@ -9,4 +9,5 @@ public class Car {
     double mileage;
     double fuelLevel;
     boolean damaged;
+    Engine engine; //has a relationship - aggregation (variabila engine de tipul Engine din clasa Engine)
 }
