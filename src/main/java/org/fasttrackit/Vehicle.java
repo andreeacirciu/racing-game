@@ -26,10 +26,28 @@ public class Vehicle {
         fuelLevel -= usedFuel;
         System.out.println("Remaining fuel" + fuelLevel);
 
+        if(fuelLevel ==0)
+        {
+            System.out.println("Not enough fuel!");
+        return 0;
+        }
+
+        if(speed > maxSpeed)
+        {
+            System.out.println("Max speed exceeded");
+            return 0;
+        }
+        else if (speed == maxSpeed)
+        {
+            System.out.println("Be careful! Max speed reach");
+        }
+
+        //TODO use more fuel if speed > 120 , direct proportional
         return traveledDistance;
     }
 
     public void decelerate(){
+
         //TODO implement this
         System.out.println("This a demo method!");
 
