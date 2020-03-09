@@ -29,4 +29,9 @@ public class Vehicle {
         return traveledDistance;
     }
 
+    public void decelerate(){
+        //TODO implement this
+        System.out.println("This a demo method!");
+
+    }
 }
