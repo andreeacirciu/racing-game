@@ -17,7 +17,7 @@ public class App
         carReference.mileage = 6.2;
         carReference.racingNumber = 123456;
         carReference.totalDistance = 0;
-        carReference.damaged = false;
+        carReference.damaged = true;
         carReference.fuelLevel= 380;
 
 //        carReference.engine = new Engine; //= adaug un tip nou real de tip Engine
@@ -32,6 +32,11 @@ public class App
 
        double carReferenceDistance = carReference.accelerate(60, 1);
         System.out.println("Car distance " + carReferenceDistance);
+
+        Mechanic mechanic =new Mechanic();
+        mechanic.repair(carReference);
+        System.out.println("Is car damaged:" + carReference.damaged);
+
 
 //one object with two references
         System.out.println("Engine details: " );
