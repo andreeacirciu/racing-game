@@ -1,5 +1,9 @@
 package org.fasttrackit;
 
+import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
+
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -9,6 +13,13 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Welcome to the racing game!" );
+
+        System.out.println("Enter your name: ");
+        Scanner scanner  = new Scanner(System.in);
+        String userInput = scanner.nextLine();
+
+        System.out.println("Entered name: " + userInput );
+
 
         Car carReference = new Car(); // constructor, car este un tip de data cu variabila carReference
         carReference.name ="Audi"; //apelez variabilele din clasa Car
@@ -70,6 +81,7 @@ public class App
 
 //        System.out.println(4 % 2);
 //        System.out.println(4 % 3);
+
 
     }
 }
