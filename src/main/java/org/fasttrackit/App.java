@@ -16,8 +16,9 @@ public class App
         carReference.maxSpeed =260;
         carReference.mileage = 6.2;
         carReference.racingNumber = 123456;
-        //carReference.damaged;
-       // carReference.fuelLevel= 12.2;
+        carReference.totalDistance = 0;
+        carReference.damaged = false;
+        carReference.fuelLevel= 380;
 
 //        carReference.engine = new Engine; //= adaug un tip nou real de tip Engine
 //        carReference.engine.manufacturer = "VW";
@@ -28,6 +29,9 @@ public class App
         engine1.capacity= 2000;
 
         carReference.engine = engine1;
+
+       double carReferenceDistance = carReference.accelerate(60, 1);
+        System.out.println("Car distance " + carReferenceDistance);
 
 //one object with two references
         System.out.println("Engine details: " );
