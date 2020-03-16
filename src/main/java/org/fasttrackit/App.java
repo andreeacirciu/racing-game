@@ -21,11 +21,9 @@ public class App
 
        // Vehicle.totalVehicleCount = 50;
 
-        System.out.println("Total count from vehicle1: "+ vehicle1.totalVehicleCount);
-        System.out.println("Total count from vehicle2: "+ vehicle2.totalVehicleCount);
-        System.out.println("Total count from vehicle class: "+ Vehicle.totalVehicleCount);
-
-
+        System.out.println("Total count from vehicle1: "+ vehicle1.getTotalVehicleCount());
+        System.out.println("Total count from vehicle2: "+ vehicle2.getTotalVehicleCount());
+        System.out.println("Total count from vehicle class: "+ Vehicle.getTotalVehicleCount());
 
 
         System.out.println( "Welcome to the racing game!" );

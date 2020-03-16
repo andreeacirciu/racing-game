@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Vehicle {
     //static variable / class variable
-    static int totalVehicleCount;
+    private static int totalVehicleCount;
 
     private int racingNumber;
     private int maxSpeed;
@@ -70,6 +70,9 @@ public class Vehicle {
 
     }
 
+    public static int getTotalVehicleCount() { //read-only property
+        return totalVehicleCount;
+    }
 
     public int getRacingNumber() {
         return racingNumber;
