@@ -1,6 +1,9 @@
 package org.fasttrackit;
 
 public class Vehicle {
+    //static variable / class variable
+    static int totalVehicleCount;
+
     int racingNumber;
     int maxSpeed;
     String name;
@@ -9,6 +12,11 @@ public class Vehicle {
     double fuelLevel;
     double totalDistance;
     boolean damaged;
+
+    //prin constructor specificam cum se comporta un obiect din acea clasa
+    public Vehicle(){
+        totalVehicleCount++;
+    }
 
     public double accelerate(double speed, double durationInHours) {
 
