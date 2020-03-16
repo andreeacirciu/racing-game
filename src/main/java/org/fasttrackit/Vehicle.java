@@ -11,9 +11,14 @@ public class Vehicle {
     boolean damaged;
 
     public double accelerate(double speed, double durationInHours) {
+
+        double mileageMultiplier = speed * durationInHours;
+        if(speed > 120){
+            mileageMultiplier = speed /100;
+        }
         System.out.println(name + "is accelerating with " + speed + "km/h for" + durationInHours);
 
-        //local variables
+        //local variable
         double traveledDistance = speed * durationInHours ;
         System.out.println("Traveled distance" + traveledDistance);
 
