@@ -28,59 +28,59 @@ public class App
 
 
 
-//        System.out.println( "Welcome to the racing game!" );
-//        System.out.println("Enter your name: ");
-//        Scanner scanner  = new Scanner(System.in);
-//        String userInput = scanner.nextLine();
-//        System.out.println("Entered name: " + userInput );
-//
-//        Engine engine1 = new Engine();//varianta mai ok
-//        engine1.manufacturer="VW";
-//        engine1.capacity= 2000;
-//
-//        Car carReference = new Car(engine1); // constructor, car este un tip de data cu variabila carReference
-//        carReference.name ="Audi"; //apelez variabilele din clasa Car
-//        carReference.color ="red";
-//        carReference.maxSpeed =260;
-//        carReference.mileage = 6.2;
-//        carReference.racingNumber = 123456;
-//        carReference.totalDistance = 0;
-//        carReference.damaged = true;
-//        carReference.fuelLevel= 380;
-//
-////        carReference.engine = new Engine; //= adaug un tip nou real de tip Engine
-////        carReference.engine.manufacturer = "VW";
-////        carReference.engine.capacity = 2000;
-//
-//
-//
-////apelare metode
-//       double carReferenceDistance = carReference.accelerate(60, 1);
-//        System.out.println("Car distance " + carReferenceDistance);
-//
-//        Mechanic mechanic =new Mechanic();
-//        mechanic.repair(carReference);
-//        System.out.println("Is car damaged:" + carReference.damaged);
-//
-//
-////one object with two references
-//        System.out.println("Engine details: " );
-//        System.out.println(engine1.capacity);
-//        System.out.println(carReference.engine.capacity);
-//
-//        engine1.capacity= 2100;
-//        System.out.println("Engine details: " );
-//        System.out.println(engine1.capacity);
-//        System.out.println(carReference.engine.capacity);
-//
-//        System.out.println("Properties of " + carReference.name); //concatenare
-//        System.out.println("Color: " + carReference.color);
-//        System.out.println("Maximum Speed: " + carReference.maxSpeed);
-//        System.out.println("Mileage: " + carReference.mileage);
-//        System.out.println("Racing Number: " + carReference.racingNumber);
-//        System.out.println("Damaged: " + carReference.damaged);
-//        System.out.println("Fuel Level: " + carReference.fuelLevel);
-//
+        System.out.println( "Welcome to the racing game!" );
+        System.out.println("Enter your name: ");
+        Scanner scanner  = new Scanner(System.in);
+        String userInput = scanner.nextLine();
+        System.out.println("Entered name: " + userInput );
+
+        Engine engine1 = new Engine();//varianta mai ok
+        engine1.manufacturer="VW";
+        engine1.capacity= 2000;
+
+        Car carReference = new Car(engine1); // constructor, car este un tip de data cu variabila carReference
+        carReference.setName("Audi"); //apelez variabilele din clasa Car
+        carReference.setColor("red");
+        carReference.setMaxSpeed(260);
+        carReference.setMileage(6.2);
+        carReference.setRacingNumber(123456);
+        carReference.setTotalDistance(0);
+        carReference.setDamaged(true);
+        carReference.setFuelLevel(380);
+
+//        carReference.engine = new Engine; //= adaug un tip nou real de tip Engine
+//        carReference.engine.manufacturer = "VW";
+//        carReference.engine.capacity = 2000;
+
+
+
+//apelare metode
+       double carReferenceDistance = carReference.accelerate(60, 1);
+        System.out.println("Car distance " + carReferenceDistance);
+
+        Mechanic mechanic =new Mechanic();
+        mechanic.repair(carReference);
+        System.out.println("Is car damaged:" + carReference.isDamaged());
+
+
+//one object with two references
+        System.out.println("Engine details: " );
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+
+        engine1.capacity= 2100;
+        System.out.println("Engine details: " );
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+
+        System.out.println("Properties of " + carReference.getName()); //concatenare
+        System.out.println("Color: " + carReference.getColor());
+        System.out.println("Maximum Speed: " + carReference.getMaxSpeed());
+        System.out.println("Mileage: " + carReference.getMileage());
+        System.out.println("Racing Number: " + carReference.getRacingNumber());
+        System.out.println("Damaged: " + carReference.isDamaged());
+        System.out.println("Fuel Level: " + carReference.getFuelLevel());
+
 //        carReference.name =null;
 //       // System.out.println(carReference.name);
 //

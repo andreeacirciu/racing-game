@@ -4,14 +4,14 @@ public class Vehicle {
     //static variable / class variable
     static int totalVehicleCount;
 
-    int racingNumber;
-    int maxSpeed;
-    String name;
-    String color;
-    double mileage;
-    double fuelLevel;
-    double totalDistance;
-    boolean damaged;
+    private int racingNumber;
+    private int maxSpeed;
+    private String name;
+    private String color;
+    private double mileage;
+    private double fuelLevel;
+    private double totalDistance;
+    private boolean damaged;
 
     //prin constructor specificam cum se comporta un obiect din acea clasa
     public Vehicle(){
@@ -19,7 +19,6 @@ public class Vehicle {
     }
 
     public double accelerate(double speed, double durationInHours) {
-
         double mileageMultiplier = speed * durationInHours;
         if(speed > 120){
             mileageMultiplier = speed /100;
@@ -64,5 +63,70 @@ public class Vehicle {
         //TODO implement this
         System.out.println("This a demo method!");
 
+    }
+
+
+    public int getRacingNumber() {
+        return racingNumber;
+    }
+
+    public void setRacingNumber(int racingNumber) {
+        this.racingNumber = racingNumber;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getTotalDistance() {
+        return totalDistance;
+    }
+
+    public void setTotalDistance(double totalDistance) {
+        this.totalDistance = totalDistance;
+    }
+
+    public boolean isDamaged() {
+        return damaged;
+    }
+
+    public void setDamaged(boolean damaged) {
+        this.damaged = damaged;
     }
 }
