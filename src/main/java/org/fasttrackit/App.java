@@ -15,16 +15,24 @@ public class App
         Game game = new Game();
         game.start();
 
-        System.out.println( "Welcome to the racing game!" );
+        new Autovehicle(new Engine());
 
+
+
+
+
+
+        System.out.println( "Welcome to the racing game!" );
         System.out.println("Enter your name: ");
         Scanner scanner  = new Scanner(System.in);
         String userInput = scanner.nextLine();
-
         System.out.println("Entered name: " + userInput );
 
+        Engine engine1 = new Engine();//varianta mai ok
+        engine1.manufacturer="VW";
+        engine1.capacity= 2000;
 
-        Car carReference = new Car(); // constructor, car este un tip de data cu variabila carReference
+        Car carReference = new Car(engine1); // constructor, car este un tip de data cu variabila carReference
         carReference.name ="Audi"; //apelez variabilele din clasa Car
         carReference.color ="red";
         carReference.maxSpeed =260;
@@ -38,11 +46,7 @@ public class App
 //        carReference.engine.manufacturer = "VW";
 //        carReference.engine.capacity = 2000;
 
-        Engine engine1 = new Engine();//varianta mai ok
-        engine1.manufacturer="VW";
-        engine1.capacity= 2000;
 
-        carReference.engine = engine1;
 
 //apelare metode
        double carReferenceDistance = carReference.accelerate(60, 1);
@@ -74,7 +78,7 @@ public class App
         carReference.name =null;
        // System.out.println(carReference.name);
 
-        Car car2 = new Car();
+        Car car2 = new Car(engine1);
         car2.name ="Ferrari";
         car2.damaged = true;
         car2.color= "blue";
