@@ -18,6 +18,11 @@ public class Vehicle {
         totalVehicleCount++;
     }
 
+    //method overloading
+    public double accelerate(double speed){
+        return accelerate(speed, 1);
+    }
+
     public double accelerate(double speed, double durationInHours) {
         double mileageMultiplier = speed * durationInHours;
         if(speed > 120){

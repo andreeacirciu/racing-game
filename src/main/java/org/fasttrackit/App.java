@@ -52,7 +52,7 @@ public class App
 //        carReference.engine.manufacturer = "VW";
 //        carReference.engine.capacity = 2000;
 
-
+new Car();
 
 //apelare metode
        double carReferenceDistance = carReference.accelerate(60, 1);
