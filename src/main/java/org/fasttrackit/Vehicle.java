@@ -24,29 +24,11 @@ public class Vehicle {
     }
 
     public double accelerate(double speed, double durationInHours) {
-        double mileageMultiplier = speed * durationInHours;
-        if(speed > 120){
-            mileageMultiplier = speed /100;
-        }
-        System.out.println(name + "is accelerating with " + speed + "km/h for" + durationInHours);
-
-        //local variable
-        double traveledDistance = speed * durationInHours ;
-        System.out.println("Traveled distance" + traveledDistance);
-
-        totalDistance +=traveledDistance;
-        System.out.println("Total traveled distance"+ totalDistance);
-
-        double usedFuel = traveledDistance * mileage;
-        System.out.println("Used fuel" + usedFuel);
-
-        fuelLevel -= usedFuel;
-        System.out.println("Remaining fuel" + fuelLevel);
 
         if(fuelLevel ==0)
         {
             System.out.println("Not enough fuel!");
-        return 0;
+            return 0;
         }
 
         if(speed > maxSpeed)
@@ -56,10 +38,31 @@ public class Vehicle {
         }
         else if (speed == maxSpeed)
         {
-            System.out.println("Be careful! Max speed reach");
+            System.out.println("Be careful! Max speed reached");
+        }else{
+            System.out.println("Valid speed entered!");
         }
 
-        //TODO use more fuel if speed > 120 , direct proportional
+        double mileageMultiplier = speed * durationInHours;
+        if(speed > 120){
+            mileageMultiplier = speed /100;
+        }
+        System.out.println(name + "is accelerating with " + speed + "km/h for" + durationInHours);
+
+
+        //local variable
+        double traveledDistance = speed * durationInHours ;
+        System.out.println("Traveled distance" + traveledDistance);
+
+        totalDistance +=traveledDistance;
+        System.out.println("Total traveled distance"+ totalDistance);
+
+        double usedFuel = traveledDistance * mileage/100;
+        usedFuel *= mileageMultiplier;
+
+        fuelLevel -= usedFuel;
+        System.out.println("Remaining fuel" + fuelLevel);
+
         return traveledDistance;
     }
 
