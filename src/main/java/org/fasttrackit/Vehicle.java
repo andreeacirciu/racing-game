@@ -72,6 +72,11 @@ public class Vehicle {
         System.out.println("This a demo method!");
 
     }
+    //co-variant return type
+    //access can be more permissive than in super-class
+    protected Vehicle clone(){
+        return new Vehicle();
+}
 
     public static int getTotalVehicleCount() { //read-only property
         return totalVehicleCount;
@@ -140,4 +145,20 @@ public class Vehicle {
     public void setDamaged(boolean damaged) {
         this.damaged = damaged;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "racingNumber=" + racingNumber +
+                ", maxSpeed=" + maxSpeed +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", mileage=" + mileage +
+                ", fuelLevel=" + fuelLevel +
+                ", totalDistance=" + totalDistance +
+                ", damaged=" + damaged +
+                '}';
+    }
+
+
 }
