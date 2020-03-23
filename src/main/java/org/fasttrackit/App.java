@@ -4,21 +4,19 @@ import java.util.Scanner;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-//        Game game = new Game();
-//        game.start();
-String a = "test";
-String b= "test";
-String c= new String("test");
+public class App {
+    public static void main(String[] args) {
+        Game game = new Game();
+        game.start();
 
-        System.out.println(a==b);
-        System.out.println(a==c);
-        System.out.println(a.equals(c));
+//        String a = "test";
+//        String b = "test";
+//        String c = new String("test");
+//
+//        System.out.println(a == b);
+//        System.out.println(a == c);
+//        System.out.println(a.equals(c));
 
 //        //method implementation taken from object class not from variable's class
 //        Vehicle cheater = new CheatingVehicle();
