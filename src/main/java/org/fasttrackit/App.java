@@ -19,14 +19,14 @@ public class App {
 //        System.out.println(a.equals(c));
 
 //        //method implementation taken from object class not from variable's class
-//        Vehicle cheater = new CheatingVehicle();
-//        cheater.setName("Cheater");
-//        cheater.accelerate(60, 1);
-//        System.out.println("Total distance:" + cheater.getTotalDistance());
+       Vehicle cheater = new CheatingVehicle();
+        cheater.setName("Cheater");
+        cheater.accelerate(60, 1);
+       System.out.println("Total distance:" + cheater.getTotalDistance());
 //
 //        //variable type decided what methods can be invoked
 //        //type casting
-//        ( (CheatingVehicle) cheater).fly();
+ //      ( (CheatingVehicle) cheater).fly();
 //
 //        Vehicle vehicle1 =new Vehicle();
 //        //vehicle1.totalVehicleCount =1 ;
