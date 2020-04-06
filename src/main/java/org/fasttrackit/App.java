@@ -7,8 +7,10 @@ import java.util.Scanner;
  */
 public class App {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.start();
+
+
+//        Game game = new Game();
+//        game.start();
 
 //        String a = "test";
 //        String b = "test";
@@ -18,20 +20,21 @@ public class App {
 //        System.out.println(a == c);
 //        System.out.println(a.equals(c));
 
-//        //method implementation taken from object class not from variable's class
+//        //method implementation taken from object's class, not from variable's class
        Vehicle cheater = new CheatingVehicle();
         cheater.setName("Cheater");
         cheater.accelerate(60, 1);
+
        System.out.println("Total distance:" + cheater.getTotalDistance());
 //
 //        //variable type decided what methods can be invoked
 //        //type casting
  //      ( (CheatingVehicle) cheater).fly();
 //
-//        Vehicle vehicle1 =new Vehicle();
+//        Vehicle vehicle1 = new Vehicle();
 //        //vehicle1.totalVehicleCount =1 ;
 //
-//        Vehicle vehicle2 =new Vehicle();
+//        Vehicle vehicle2 = new Vehicle();
 //     //   vehicle2.totalVehicleCount = 2;
 //
 //       // Vehicle.totalVehicleCount = 50;

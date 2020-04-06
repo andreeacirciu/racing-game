@@ -43,25 +43,25 @@ public class Vehicle {
             System.out.println("Valid speed entered!");
         }
 
-        double mileageMultiplier = speed * durationInHours;
+        double mileageMultiplier = 1;
         if(speed > 120){
             mileageMultiplier = speed /100;
         }
-        System.out.println(name + "is accelerating with " + speed + "km/h for" + durationInHours);
+        System.out.println(name + " is accelerating with " + speed + " km/h for " + durationInHours + " h ");
 
 
         //local variable
         double traveledDistance = speed * durationInHours ;
-        System.out.println("Traveled distance" + traveledDistance);
+        System.out.println("Traveled distance: " + traveledDistance);
 
         totalDistance +=traveledDistance;
-        System.out.println("Total traveled distance"+ totalDistance);
+        System.out.println("Total traveled distance: "+ totalDistance);
 
         double usedFuel = traveledDistance * mileage/100;
         usedFuel *= mileageMultiplier;
 
-        fuelLevel -= usedFuel;
-        System.out.println("Remaining fuel" + fuelLevel);
+        fuelLevel =fuelLevel - usedFuel;
+        System.out.println("Remaining fuel: " + fuelLevel);
 
         return traveledDistance;
     }

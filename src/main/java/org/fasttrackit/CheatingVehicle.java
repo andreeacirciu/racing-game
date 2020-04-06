@@ -20,6 +20,6 @@ public class CheatingVehicle extends Vehicle {
     }
 
     public void fly(){
-
+        System.out.println("Flying!");
     }
 }
